@@ -1,0 +1,137 @@
+.main-hearder
+{
+    text-align: center;
+    color: aqua;
+    background-color: rgb(162, 214, 19);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 50px;
+    box-sizing: content-box;
+    width: 2000;
+}
+.main-hearder.logo
+{
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    padding: 80x 14px;
+    margin: 10px 0;
+}
+.main-hearder.logo img
+{
+    border-radius: 50px;
+    
+}
+.main-hearder.title
+{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: large;
+    text-transform: capitalize;
+}
+h1
+{
+    color: blueviolet;
+    text-align: center;
+}
+.bgimage
+{
+    background-image: url(../images/122-92-1-poster-no-329-hd-print-house-original-imagmt4zyyfkfwfa.webp);
+    background-color: chocolate;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.maincomponent
+{
+    border: 2px solid black;
+}
+.box
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    transition: width 2s , hight 2s , transform 3s;
+    transition-delay: 2s;
+}
+#box1
+{
+    background-color: hotpink;
+    transition-timing-function: linear;
+}
+#box2
+{
+    background-color: chartreuse;
+    transition-timing-function: ease-out;
+}
+
+#box3
+{
+    background-color: navy;
+    transition-timing-function: ease-in-out;
+}
+
+#box4
+{
+    background-color: yellow;
+    transition-timing-function: ease-in;
+}
+
+.newrotate
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: purple;
+    transition: width 2s , height 2s ,transform 2s;
+}
+#newrotate:hover
+{
+    width: 250px;
+    height: 2px;
+    transform: rotate(180deg);
+}
+.animi
+{
+    width: 160px;
+    height: 150px;
+    background-color: aquamarine;
+    animation-name: animad;
+    animation-duration: 6s;
+
+}
+.scrolltext{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 25px;
+    width: 100%;
+    white-space: nowrap;
+    color: brown;
+    overflow: hidden;
+    border: 2px soild green;
+}
+@keyframes scrollleft{
+    form{transform: translateX(100%);}
+    to{transform: translateX(-100%);}
+}
+.scrolltext span{
+    display: inline-block;
+    padding-left: 100%;
+    animation-name: scrollleft ;
+    animation-duration: 10s;
+}
+/*scroll leftto right*/
+.scrollright span 
+{
+    display: inline-block;
+    padding: 100%;
+    animation-name:scroll-ridht ;
+    animation-duration: 10s;
+}
+@keyframes scroll-right{
+    form{transform: translateX(100%);}
+    to{transform: translateX(-100%);} 
+}
